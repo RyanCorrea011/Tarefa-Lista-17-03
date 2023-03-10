@@ -18,5 +18,19 @@ namespace ConsoleApp_Noite
             Descricao = descricao;
             Valor = valor;
         }
+
+        public string getDescricao()
+        {
+            return Descricao;
+        }
+        public int getId()
+        {
+            return Id;
+        }
+
+        public decimal getValor()
+        {
+            return Valor;
+        }
     }
 }
