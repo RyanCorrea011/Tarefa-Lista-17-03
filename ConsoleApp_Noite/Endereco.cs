@@ -28,7 +28,7 @@ namespace ConsoleApp_Noite
             Cep = cep;
             Cidade = cidade;
             Estado = estado;
-        }
+    }
 
         public void setRua(string rua) { Rua = rua; }
         public void setNumero(string numero) { Numero = numero; }
