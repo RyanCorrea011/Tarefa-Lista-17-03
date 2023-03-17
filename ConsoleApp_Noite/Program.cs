@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using ConsoleApp_Noite;
+using ConsoleApp_Noite.Heranca;
 
 Console.WriteLine("Hello, World!");
 
@@ -32,6 +33,41 @@ Console.WriteLine( c2.getEndereco().getRua() + " "+c2.getEndereco().getNumero() 
 c2.getEndereco().setNumero("135");
 
 Console.WriteLine(c2.getEndereco().getNumero());
+Console.WriteLine(c2.getEndereco().EnderecoCompleto());
 
+c2.getEndereco().EnderecoCompleto();
+
+Carro gol = new Carro();
+gol.temMotor = true;
+gol.numeroPortas = 4;
+gol.numeroAssentos = 5;
+
+Bike caloi = new Bike();
+caloi.temMotor = false;
+caloi.numeroPortas = 0;
+caloi.numeroAssentos = 1;
+
+gol.fabricante = "VW";
+gol.cintoSeguranca = true;
+gol.arCondicionado = false;
+
+Carro Saveiro = new Carro();
+Carro Palio = new Carro();
+Carro Uno = new Carro();
+
+Saveiro.fabricante = "VW";
+Palio.fabricante = "Fiat";
+Uno.fabricante = "Fiat";
+
+Bike speed = new Bike();
+speed.temMotor = false;
+speed.numeroPortas = 0;
+speed.numeroAssentos = 1;
+
+Console.WriteLine( speed.ExibirDados() );
+Console.WriteLine( gol.ExibirDados() );
+
+// Faça uma ação chamada ExibirDados e
+// mostre as informações na tela pelo Console.Writeline
 
 
