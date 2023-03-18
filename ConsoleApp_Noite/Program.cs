@@ -63,11 +63,40 @@ Bike speed = new Bike();
 speed.temMotor = false;
 speed.numeroPortas = 0;
 speed.numeroAssentos = 1;
-
+// Faça uma ação chamada ExibirDados e
+// mostre as informações na tela pelo Console.Writeline
 Console.WriteLine( speed.ExibirDados() );
 Console.WriteLine( gol.ExibirDados() );
 
-// Faça uma ação chamada ExibirDados e
-// mostre as informações na tela pelo Console.Writeline
 
+
+List<Carro> listaCarros = new List<Carro>();
+listaCarros.Add(gol);
+listaCarros.Add(Palio);
+listaCarros.Add(Uno);
+listaCarros.Add(Saveiro);
+
+Console.WriteLine(listaCarros[0].fabricante);
+listaCarros.Remove(Palio);
+
+for (int i = 0; i < listaCarros.Count; i++)
+{
+    Console.WriteLine(listaCarros[i].ExibirDados());
+}
+
+foreach (var item in listaCarros)
+{
+    Console.WriteLine(item.ExibirMarca());
+}
+
+
+//Imprima na tela todos os clientes desse contexto;
+//Dica crie uma lista para eles.
+
+
+//Crie uma lista com 560 produtos
+//Imprima na tela
+
+//Crie uma lista que aceite qualquer tipo de veiculo
+//Imprimam na tela
 
