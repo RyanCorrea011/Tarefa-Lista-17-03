@@ -8,17 +8,16 @@ namespace ConsoleApp_Noite
 {
     public class Produto
     {
-        private int Id;
-        private decimal Valor;
-        private string Descricao;
-
-        public Produto(int id, decimal valor , string descricao)
+        public int Id;
+        public decimal Valor;
+        public string Descricao;
+        public Produto(int id, decimal valor, string descricao)
         {
             Id = id;
             Descricao = descricao;
             Valor = valor;
-        }
 
+        }
         public string getDescricao()
         {
             return Descricao;
@@ -47,3 +46,4 @@ namespace ConsoleApp_Noite
         }
     }
 }
+    

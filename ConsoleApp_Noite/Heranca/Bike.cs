@@ -9,5 +9,11 @@ namespace ConsoleApp_Noite.Heranca
     public class Bike : Veiculo
     {
         public int velocidadeMaximaEmKmH;
+        public string Nome;
+        public string ExibirMarca(string Nome)
+        {
+            return "O fabricante deste veiculo é: " + Nome;
+        }
     }
+    
 }

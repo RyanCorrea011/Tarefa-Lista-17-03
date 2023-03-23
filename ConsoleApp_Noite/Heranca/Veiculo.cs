@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,6 +12,7 @@ namespace ConsoleApp_Noite.Heranca
         public int numeroAssentos;
         public int numeroPortas;
         public bool temMotor;
+      
 
         public string ExibirDados()
         {
@@ -22,7 +24,8 @@ namespace ConsoleApp_Noite.Heranca
             {
                 return "Assentos: "+numeroAssentos + " Nº Portas:" + numeroPortas;
             }
-            
+      
         }
+
     }
 }
